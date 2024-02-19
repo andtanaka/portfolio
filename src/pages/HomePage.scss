@@ -1,0 +1,17 @@
+.fix-container {
+  position: fixed;
+  @media screen and (max-width: 576px) {
+    position: relative;
+  }
+}
+
+.scrollspy-container {
+  position: relative;
+  overflow: auto;
+  height: auto;
+  // overflow-y: scroll;
+}
+
+.scrollspy-topic {
+  padding: 5rem 0 2.5rem 0;
+}

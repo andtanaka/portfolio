@@ -1,0 +1,17 @@
+@import '../App.scss';
+
+ul#scrollspy-sidemenu {
+  padding: 5rem 0 0 0;
+  li.nav-item {
+    width: 100%;
+    a {
+      color: inherit;
+      padding-left: 0;
+
+      &:hover,
+      &.active-scrollspy {
+        color: $bold-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Zilla+Slab:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap');
+
+$bold-color: #01b6ad;
+$neutral-color-01: #0a4958;
+
+$neutral-color-51: #ffffff;
+$neutral-color-52: #f6e7d2;
+
+body {
+  font-family: 'Zilla Slab', serif;
+  letter-spacing: 0.3px;
+
+  color: $neutral-color-51;
+  background-color: $neutral-color-01;
+
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-weight: 700;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.title {
+  font-family: 'Patua One', serif;
+  letter-spacing: 0.8px;
+}
+
+.btn {
+  font-weight: 700;
+  letter-spacing: 0.8px;
+
+  background-color: $bold-color;
+  border: none;
+  color: white;
+
+  &:active,
+  &:hover {
+    background-color: $bold-color;
+    color: white;
+  }
+}
+
+//Side button
+
+.fix-side-bottom {
+  display: flex;
+  position: fixed;
+  align-items: end;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+
+  & > .btn.btn-bottom {
+    display: block;
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 3rem;
+    padding: 1em;
+  }
+}

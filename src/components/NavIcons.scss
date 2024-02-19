@@ -1,0 +1,11 @@
+@import '../App.scss';
+
+.nav {
+  a.nav-item.icon-item {
+    padding-right: 1rem;
+
+    &:hover {
+      color: $bold-color;
+    }
+  }
+}
