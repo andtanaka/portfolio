@@ -8,7 +8,7 @@ const BlogPage = () => {
   return (
     <Container>
       <Row>
-        <Col xs={{ span: 12, order: 2 }} sm={{ span: 8, order: 1 }}>
+        <Col xs={{ span: 12, order: 2 }} md={{ span: 8, order: 1 }}>
           <p>Posts</p>
           <ScrollSpy
             scrollThrottle={100}

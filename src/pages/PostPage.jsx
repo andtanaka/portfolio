@@ -1,8 +1,8 @@
 import React from 'react';
-import ViewPost from '../components/ViewPost';
+import ViewPost from '../components/ViewPost.jsx';
 import posts from '../data/posts';
 import { Container, Row, Col } from 'react-bootstrap';
-import NavViewPost from '../components/NavViewPost';
+import NavViewPost from '../components/NavViewPost.jsx';
 
 const PostPage = () => {
   const post = posts[0];

@@ -7,7 +7,11 @@ const CarouselImages = ({ photos }) => {
       {photos.map((photo) => {
         return (
           <Carousel.Item key={photo.name}>
-            <Image src={photo.src} alt={photo.title} />
+            <Image
+              src={photo.src}
+              alt={photo.title}
+              style={{ maxWidth: '100%' }}
+            />
             <Carousel.Caption style={{ backgroundColor: 'black' }}>
               <h3>{photo.title}</h3>
               <p>{photo.description}</p>

@@ -1,11 +1,11 @@
 import './HomePage.scss';
 import { Container, Row, Col } from 'react-bootstrap';
 import ScrollSpy from 'react-ui-scrollspy';
-import NavIcons from '../components/NavIcons';
-import SideMenuNavbar from '../components/SideMenuNavbar';
-import AboutTopic from '../components/AboutTopic';
-import SkillsAndToolsTopic from '../components/SkillsAndToolsTopic';
-import ProjectsTopic from '../components/ProjectsTopic';
+import NavIcons from '../components/NavIcons.jsx';
+import SideMenuNavbar from '../components/SideMenuNavbar.jsx';
+import AboutTopic from '../components/AboutTopic.jsx';
+import SkillsAndToolsTopic from '../components/SkillsAndToolsTopic.jsx';
+import ProjectsTopic from '../components/ProjectsTopic.jsx';
 
 const topics = [
   {

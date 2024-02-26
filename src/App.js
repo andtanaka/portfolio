@@ -1,6 +1,6 @@
 import './App.scss';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import RootLayout from './components/RootLayout';
+import RootLayout from './components/RootLayout.jsx';
 import HomePage from './pages/HomePage';
 import BlogPage from './pages/BlogPage';
 import ContactPage from './pages/ContactPage';
