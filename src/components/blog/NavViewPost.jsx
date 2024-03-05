@@ -1,4 +1,4 @@
-import React from 'react';
+import styles from './NavViewPost.module.scss';
 
 const NavViewPost = ({ post }) => {
   const { tags, subtopics } = post;

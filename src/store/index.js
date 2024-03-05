@@ -17,6 +17,10 @@ export const store = configureStore({
 
 setupListeners(store.dispatch);
 
-export { useGetPostsQuery, useGetSomePostsQuery } from './apis/postsApi';
+export {
+  useGetPostsQuery,
+  useGetSomePostsQuery,
+  useGetPostByNameQuery,
+} from './apis/postsApi';
 
 export { useGetTagsQuery } from './apis/tagsApi';

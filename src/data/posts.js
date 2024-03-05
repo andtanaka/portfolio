@@ -1,5 +1,5 @@
 const post = {
-  createAt: '2024-01-23T00:00:00.000Z',
+  postDate: '2024-01-23T00:00:00.000Z',
   author: 'Andressa Tanaka',
   name: 'post-test',
   subtopics: [

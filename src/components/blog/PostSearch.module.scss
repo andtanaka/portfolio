@@ -1,0 +1,7 @@
+.formSearch {
+  margin: auto;
+  max-width: 250px;
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+  }
+}

@@ -12,7 +12,7 @@ const tagsApi = createApi({
         providesTags: (result, error, arg) => {
           const tags = [];
           if (result) {
-            result.map((tag) => {
+            result.tags.map((tag) => {
               return tags.push({ type: 'Tags', id: tag._id });
             });
           }

@@ -19,12 +19,13 @@ const postsApi = createApi({
           tags.push('Posts');
           return tags;
         },
-        query: ({ text, sort, pageNumber }) => ({
+        query: ({ text, tag, sort, pageNumber }) => ({
           url: POST_URL,
           method: 'GET',
           credentials: 'include',
           params: {
             text,
+            tag,
             sort,
             pageNumber,
           },
@@ -46,9 +47,22 @@ const postsApi = createApi({
           method: 'GET',
         }),
       }),
+      getPostByName: builder.query({
+        providesTags: (result, error, id) => {
+          return [{ type: 'Posts', id: result.post._id }];
+        },
+        query: (name) => {
+          return {
+            url: `${POST_URL}/name/${name}`,
+            method: 'GET',
+            credentials: 'include',
+          };
+        },
+      }),
     };
   },
 });
 
-export const { useGetPostsQuery, useGetSomePostsQuery } = postsApi;
+export const { useGetPostsQuery, useGetSomePostsQuery, useGetPostByNameQuery } =
+  postsApi;
 export { postsApi };

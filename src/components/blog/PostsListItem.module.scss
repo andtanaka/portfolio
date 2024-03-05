@@ -1,0 +1,41 @@
+@import '../../styles/variables.scss';
+.postItemContainer {
+  margin-top: 1.5em;
+}
+
+.postDateContainer {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+.postDate {
+  font-weight: 600;
+}
+
+.postTitle {
+  color: $bold-color;
+  font-weight: 600;
+  -webkit-line-clamp: 1;
+
+  @media screen and (max-width: 582px) {
+    -webkit-line-clamp: 2;
+  }
+}
+
+.postSubtitle {
+  -webkit-line-clamp: 2;
+  padding-top: 0.5em;
+  font-style: italic;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.postTitle,
+.postSubtitle {
+  display: block;
+  display: -webkit-box;
+  max-width: 100%;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
