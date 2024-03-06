@@ -1,6 +1,15 @@
 @import '../../styles/variables.scss';
 .postItemContainer {
   margin-top: 1.5em;
+
+  &:hover {
+    > * {
+      .postTitle {
+        font-weight: 800;
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 .postDateContainer {

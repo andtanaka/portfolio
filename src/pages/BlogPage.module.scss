@@ -1,4 +1,7 @@
 .sideBar {
+  margin-top: 3em;
+  padding: 0 1em;
+  max-width: 380px;
   @media screen and (max-width: 767px) {
     display: none;
   }

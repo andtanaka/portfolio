@@ -22,12 +22,19 @@ const TagsSideList = () => {
       content = (
         <div className="d-sm-block d-none">
           <h5>Tags</h5>
-          <ul>
+          <ul className={styles.tagsList}>
             {data.tags.map((tag) => (
-              <li key={tag._id}>
-                <Link to={`?tag=${tag.name}`}>{tag.name}</Link>
+              <li key={tag._id} className={styles.tagCell}>
+                <Link to={`?tag=${tag.name}`} className={styles.tagIcon}>
+                  {tag.name}
+                </Link>
               </li>
             ))}
+            <li className={styles.tagCell}>
+              <Link to={`/posts/tags`} className={styles.tagIcon}>
+                &#8230;
+              </Link>
+            </li>
           </ul>
         </div>
       );

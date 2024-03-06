@@ -1,0 +1,28 @@
+@import '../../styles/variables.scss';
+
+.postsList {
+  list-style: none;
+  padding: 0;
+}
+
+.postItem {
+  margin: 1em;
+  border-bottom: 1px solid $bold-color;
+
+  .itemName {
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+  }
+
+  .itemDate {
+    margin: 0.6em 0;
+    color: $bold-color;
+    font-weight: 600;
+    text-align: end;
+  }
+}

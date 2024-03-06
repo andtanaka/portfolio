@@ -1,0 +1,28 @@
+@import '../../styles/variables.scss';
+
+.tagsList {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tagCell {
+  margin: 0.2em;
+  padding: 0.5em;
+  background-color: $bold-color;
+  border-radius: 1.2em;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.tagIcon {
+  font-weight: 600;
+}
+
+.tagText {
+  text-align: end;
+}

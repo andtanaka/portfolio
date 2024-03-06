@@ -2,11 +2,16 @@ import styles from './PostsListItem.module.scss';
 
 import { Col, Container, Row } from 'react-bootstrap';
 import printDate from '../../utils/printDate';
+import { Link } from 'react-router-dom';
 
 const PostsListItem = ({ post }) => {
   console.log(printDate(post.postDate));
   return (
-    <Container className={styles.postItemContainer}>
+    <Container
+      as={Link}
+      to={`${post.name}`}
+      className={styles.postItemContainer}
+    >
       <Row>
         <Col
           md={{ span: 3, order: 1 }}

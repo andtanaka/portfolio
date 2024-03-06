@@ -37,8 +37,8 @@ const PostsList = () => {
     }
   }
   return (
-    <Container fluid>
-      <h4 className="pb-2">Posts</h4>
+    <Container className={styles.postsListContainer}>
+      <h4 className="pb-1">Posts</h4>
       {content}
     </Container>
   );

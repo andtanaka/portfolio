@@ -1,10 +1,8 @@
 import styles from './PostSearch.module.scss';
 import { useForm } from 'react-hook-form';
-
 import { Button, Form, InputGroup } from 'react-bootstrap';
 import { FaSearch } from 'react-icons/fa';
-import { useQuery } from '../../hooks/useQuery';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { getSearchUrl } from '../../utils/getSearchUrl';
 
 const PostSearch = ({ url }) => {
@@ -13,9 +11,7 @@ const PostSearch = ({ url }) => {
       text: '',
     },
   });
-  const query = useQuery();
   const navigate = useNavigate();
-  const location = useLocation();
 
   const handleSearch = ({ text }) => {
     const search = getSearchUrl({ text });
@@ -25,10 +21,10 @@ const PostSearch = ({ url }) => {
   };
 
   return (
-    <Form className={styles.formSearch}>
+    <Form className={styles.formSearch} onSubmit={handleSubmit(handleSearch)}>
       <InputGroup className="mb-3">
         <Form.Control type="text" {...register('text')} />
-        <Button onClick={handleSubmit(handleSearch)}>
+        <Button type="submit">
           <FaSearch />
         </Button>
       </InputGroup>
