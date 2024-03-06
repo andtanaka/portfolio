@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage';
 import BlogPage from './pages/BlogPage';
 import ContactPage from './pages/ContactPage';
 import PostPage from './pages/PostPage';
+import TagsPage from './pages/TagsPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
       { path: 'home', element: <HomePage /> },
 
       { path: 'posts', element: <BlogPage /> },
+      { path: 'posts/tags', element: <TagsPage /> },
       { path: 'posts/:name', element: <PostPage /> },
 
       { path: 'contact', element: <ContactPage /> },

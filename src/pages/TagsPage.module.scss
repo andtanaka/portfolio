@@ -1,0 +1,16 @@
+.tagsList {
+  margin-top: 2em;
+  list-style: none;
+  padding: 0;
+}
+
+.tagItem {
+  letter-spacing: 1.5px;
+  margin: 1em 0;
+  .tagLink {
+    &:hover {
+      padding-bottom: 5px;
+      border-bottom: 1px solid white;
+    }
+  }
+}

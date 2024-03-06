@@ -23,7 +23,7 @@ const TagsSideList = () => {
         <div className="d-sm-block d-none">
           <h5>Tags</h5>
           <ul className={styles.tagsList}>
-            {data.tags.map((tag) => (
+            {data.tags.slice(0, 6).map((tag) => (
               <li key={tag._id} className={styles.tagCell}>
                 <Link to={`?tag=${tag.name}`} className={styles.tagIcon}>
                   {tag.name}

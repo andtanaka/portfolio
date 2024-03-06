@@ -17,7 +17,6 @@ import { useGetPostByNameQuery } from '../store/index.js';
 import Loader from '../components/Loader.jsx';
 import ScrollSpy from 'react-ui-scrollspy';
 import ViewPost from '../components/blog/ViewPost.jsx';
-import NavViewPost from '../components/blog/NavViewPost.jsx';
 
 const PostPage = () => {
   const { name } = useParams();
