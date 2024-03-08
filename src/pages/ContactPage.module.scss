@@ -1,0 +1,15 @@
+@import '../styles/variables.scss';
+
+.contactContainer {
+  margin-top: 3em;
+  padding: 2em;
+  background-color: $neutral-color-02;
+  max-width: 780px;
+  border-radius: 1em;
+  border-bottom: 2px solid $bold-color;
+  border-right: 2px solid $bold-color;
+}
+
+.label {
+  font-weight: 600;
+}

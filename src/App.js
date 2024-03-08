@@ -1,4 +1,5 @@
 import './App.scss';
+import 'react-toastify/dist/ReactToastify.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import RootLayout from './components/RootLayout.jsx';
 import HomePage from './pages/HomePage';

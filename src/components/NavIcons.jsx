@@ -5,22 +5,21 @@ import { MdEmail } from 'react-icons/md';
 
 import React from 'react';
 import { Nav, NavItem } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 
 const icons = [
   {
     description: 'Github',
-    to: '/',
+    to: 'https://github.com/andtanaka',
     figure: <FaGithub />,
   },
   {
     description: 'Linkedin',
-    to: '/',
+    to: 'https://www.linkedin.com/in/andressa-tanaka-4b39a185',
     figure: <FaLinkedin />,
   },
   {
     description: 'Email',
-    to: '/',
+    to: 'mailto:andressamtanaka@gmail.com',
     figure: <MdEmail />,
   },
 ];
@@ -34,8 +33,9 @@ const NavIcons = () => {
             <NavItem
               className="icon-item"
               key={icon.description}
-              as={Link}
-              to={icon.to}
+              as="a"
+              href={icon.to}
+              target="_blank"
             >
               {icon.figure}
             </NavItem>
