@@ -1,0 +1,26 @@
+@import '../styles/variables.scss';
+
+.projectContainer {
+  background-color: $neutral-color-02;
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 1em;
+  padding: 1em;
+  // background-color: red;
+  &:hover {
+    border-top: 2px solid $neutral-color-02;
+    border-left: 2px solid $neutral-color-02;
+    border-bottom: 2px solid $bold-color;
+    border-right: 2px solid $bold-color;
+  }
+}
+
+.iconsList {
+  display: flex;
+}
+.iconItem {
+  padding: 0.5em;
+  svg {
+    // font-size: 1rem;
+  }
+}

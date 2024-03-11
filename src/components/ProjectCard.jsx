@@ -1,41 +1,29 @@
-import React from 'react';
+import styles from './ProjectCard.module.scss';
 import { Button, Col, Container, Image, Row } from 'react-bootstrap';
-import CarouselImages from './CarouselImages';
+import skillsAndTools from '../data/skillsAndTools';
+import { Link } from 'react-router-dom';
 
-const ProjectCard = ({
-  title,
-  tools,
-  linkDeploy,
-  linkRepo,
-  photos,
-  children,
-}) => {
+const ProjectCard = ({ project, name }) => {
+  const { title, text, tools, linkDeploy, linkRepo, photos, photo } = project;
+
+  const iconsTools = tools.map((key) => {
+    return (
+      <div key={key} className={styles.iconItem}>
+        {skillsAndTools[key].icon}
+      </div>
+    );
+  });
+
   return (
-    <Container>
-      <Row>
-        <Col>
-          <div>
-            <h3>{title}</h3>
-            <p>{children}</p>
-          </div>
-          <div>
-            {tools.map((tool) => {
-              return <div>{tool.icon}</div>;
-            })}
-          </div>
-          <div>
-            <Button as="a" href={linkDeploy}>
-              Demo
-            </Button>
-            <Button as="a" href={linkRepo}>
-              Github
-            </Button>
-          </div>
-        </Col>
-        <Col>
-          <CarouselImages photos={photos} />
-        </Col>
-      </Row>
+    <Container className={styles.projectContainer}>
+      <h4>{title}</h4>
+      <p className="m-0">{text}</p>
+      <div className={styles.iconsList}>{iconsTools}</div>
+      <div className="mt-2 text-end">
+        <Button as={Link} to={`/project/${name}`}>
+          Ver mais
+        </Button>
+      </div>
     </Container>
   );
 };

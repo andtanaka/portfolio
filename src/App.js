@@ -7,6 +7,7 @@ import BlogPage from './pages/BlogPage';
 import ContactPage from './pages/ContactPage';
 import PostPage from './pages/PostPage';
 import TagsPage from './pages/TagsPage.jsx';
+import ProjectPage from './pages/ProjectPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -15,12 +16,12 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <HomePage /> },
       { path: 'home', element: <HomePage /> },
+      { path: 'contact', element: <ContactPage /> },
 
       { path: 'posts', element: <BlogPage /> },
       { path: 'posts/tags', element: <TagsPage /> },
       { path: 'posts/:name', element: <PostPage /> },
-
-      { path: 'contact', element: <ContactPage /> },
+      { path: 'project/:name', element: <ProjectPage /> },
     ],
   },
 ]);

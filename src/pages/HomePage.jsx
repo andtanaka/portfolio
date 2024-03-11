@@ -40,17 +40,18 @@ const HomePage = () => {
           </div>
         </Col>
         <Col xs={12} sm={8} md={9}>
-          <ScrollSpy
-            scrollThrottle={100}
-            useBoxMethod={false}
-            activeClass="active-scrollspy"
-            className="scrollspy-container"
-          >
-            <AboutTopic />
-            <SkillsAndToolsTopic />
+          <div className="scrollspy-container">
+            <ScrollSpy
+              scrollThrottle={100}
+              useBoxMethod={false}
+              activeClass="active-scrollspy"
+            >
+              <AboutTopic />
+              <SkillsAndToolsTopic />
 
-            <ProjectsTopic />
-          </ScrollSpy>
+              <ProjectsTopic />
+            </ScrollSpy>
+          </div>
         </Col>
       </Row>
     </Container>
