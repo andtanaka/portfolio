@@ -1,4 +1,6 @@
 import './App.scss';
+import './styles/render.scss';
+
 import 'react-toastify/dist/ReactToastify.css';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import RootLayout from './components/RootLayout.jsx';

@@ -16,7 +16,8 @@ const ViewPost = ({ post }) => {
       <Container className="p-0">
         <p className={styles.postDate}>{printDate(post.postDate)}</p>
 
-        <h3>{post.title}</h3>
+        <h3 className="mb-0">{post.title}</h3>
+        <p className="mb-1">{post.subtitle}</p>
         <ul className={styles.tagsList}>
           <li className={styles.tagCell}>
             <FaTags />
@@ -29,7 +30,7 @@ const ViewPost = ({ post }) => {
             </li>
           ))}
         </ul>
-        <div className="render-content">{parse(content)}</div>
+        <div className="pt-3 render-content">{parse(content)}</div>
       </Container>
     </div>
   );
