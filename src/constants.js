@@ -1,4 +1,5 @@
-export const BASE_URL = 'https://portfolio-backend-cqjq.onrender.com/api';
+// export const BASE_URL = ''; //desenvolvimento
+export const BASE_URL = '/api'; //produção
 
 export const POST_URL = '/post';
 export const TAG_URL = '/tag';
