@@ -5,13 +5,12 @@ const AboutTopic = () => {
     <div className="scrollspy-topic">
       <h4 id="scrollspy-about">About</h4>
       <p>
-        Olá, meu nome é Andressa e sou Engenheira Civil de formação e uma
-        curiosa pela área da programação. Adoro automatizar cálculos e
-        processos.
+        Oi, sou Andressa, engenheira civil e entusiasta da programação. Gosto de
+        automatizar cálculos e processos.
       </p>
       <p>
-        Os meus projetos pessoais atuais são web. E os desenvolvo tanto no
-        frontend quanto no backend.
+        Atualmente, estou trabalhando em projetos pessoais na web, desenvolvendo
+        tanto o frontend quanto o backend.
       </p>
     </div>
   );

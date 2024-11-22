@@ -1,27 +1,29 @@
 import styles from './CarouselImages.module.scss';
 import { Carousel, Image } from 'react-bootstrap';
 
-const CarouselImages = ({ photos }) => {
+const CarouselImages = ({ photos, display }) => {
   return (
     <Carousel className={styles.carouselContainer} indicators={false}>
       {photos.map((photo) => {
+        const { desktop, mobile } = photo.src;
+
         return (
-          <Carousel.Item key={photo.name}>
+          <Carousel.Item key={photo.name} className={styles.itemContainer}>
+            <div className={styles.captionContainer}>
+              <Carousel.Caption className={styles.imageCaption}>
+                <div className={styles.textCaption}>
+                  <h5>{photo.title}</h5>
+                  <p>{photo.description}</p>
+                </div>
+              </Carousel.Caption>
+            </div>
+
             <div className={styles.imageContainer}>
               <Image
-                src={photo.src}
+                src={display === 'desktop' ? desktop : mobile}
                 alt={photo.title}
                 className={styles.image}
               />
-            </div>
-
-            {/* <Carousel.Caption style={{ backgroundColor: 'black' }}>
-              <h3>{photo.title}</h3>
-              <p>{photo.description}</p>
-            </Carousel.Caption> */}
-            <div className={styles.imageCaption}>
-              <h3>{photo.title}</h3>
-              <p>{photo.description}</p>
             </div>
           </Carousel.Item>
         );

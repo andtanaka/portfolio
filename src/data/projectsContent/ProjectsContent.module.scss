@@ -1,0 +1,48 @@
+.projectContainer {
+  display: block;
+  overflow-wrap: wrap;
+  align-items: center;
+  margin: 1rem auto;
+  max-width: 1000px;
+}
+
+.featuresBox {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  list-style-type: none;
+  padding: 0;
+
+  .featureBox {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+
+    width: 300px;
+    padding: 15px 0;
+    margin: 0 10px;
+    justify-content: center;
+    text-align: center;
+
+    .featureIcon {
+      width: 100%;
+      padding: 0.5em;
+      svg {
+        font-size: 2rem;
+      }
+    }
+
+    .featureText {
+      width: 100%;
+    }
+  }
+}
+
+.topicBox {
+  &:nth-of-type(1) {
+    padding: 3rem 0 2.5rem 0;
+  }
+  padding: 2rem 0 2.5rem 0;
+}

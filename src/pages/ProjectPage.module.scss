@@ -1,1 +1,47 @@
+@import '../App.scss';
 
+.projectBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.titleBox {
+  display: block;
+  overflow-wrap: wrap;
+  align-items: center;
+  margin: 1rem auto;
+  width: 100%;
+}
+
+.iconsList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.iconItem {
+  padding: 0.5em;
+  svg {
+    font-size: 1.2rem;
+  }
+}
+
+.carouselBoxDesktop {
+  max-width: 1200px;
+  max-height: 300px;
+  overflow: hidden;
+
+  @media screen and (max-width: 540px) {
+    display: none;
+  }
+}
+
+.carouselBoxMobile {
+  max-width: 320px;
+  max-height: 700px;
+  overflow: hidden;
+
+  @media screen and (min-width: 540px) {
+    display: none;
+  }
+}
